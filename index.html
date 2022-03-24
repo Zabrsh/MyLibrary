@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width
+    , initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>MyLibrary</h1>
+    </div>
+    <div class="main">
+        <table id="books">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Page Number</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id= "result"></tbody>
+        </table>
+    </div>
+    
+    <div class="circle">
+        <button class="open-button" onclick="openForm()">+</button>
+    </div>
+    
+  <div class="form-popup" id="myForm">
+      <form id="add"class="form-container">
+          <h1>Add Book</h1>
+          <label for="title">Book Title</label>
+          <input type="text" name="title" placeholder="Title" id="title" required>
+          <label for="book author">Author</label>
+          <input type="text" name="author" placeholder="Author" id="author" required>
+          <label for="pages">Pages</label>
+          <input type="text" name="page" placeholder="Pages" id="page" required>
+          <div class="is-read">
+            <label for="is-read">Have you read it?</label>
+            <input class="" type="checkbox" id="isRead" />
+          </div>
+          <button class="" type="submit" id="submit" onclick="addBookToLibrary()">Submit</button>
+
+      </form>
+  </div>
+
+    
+    <div class="footer">
+        <h5>Made by : </h5>
+        
+        <a href="https://github.com/Zabrsh">Zabrsh</a>
+        <i class="fab fa-github"></i>
+    </div>
+    
+    <script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+
+</script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

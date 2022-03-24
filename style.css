@@ -1,0 +1,119 @@
+body {
+    background-color: orange;
+    margin: 0;
+}
+
+.header {
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+   
+}
+
+.books {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  
+}
+
+.books th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.books td{
+    text-align: center;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: white;
+  }
+
+
+.footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    font-size: 28px;
+    
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.circle button{
+    border-radius: 50%;
+    height: 50px;
+    width: 60px;
+    border: none;
+    font-size: 36px;
+}
+
+
+.footer a{
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    left: 40%;
+    bottom: 0;
+    border: 3px none #f1f1f1;
+    z-index: 9; 
+   
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;   
+    border-radius: 25px;
+    
+}  
+
+.form-container input[type=text] {
+    width: 80%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+
+.form-container button {
+    
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom:10px;
+        opacity: 0.8;
+      
+}
+
